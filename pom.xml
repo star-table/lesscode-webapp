@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	<version>1.5.0-SNAPSHOT</version>
+    <artifactId>webapp</artifactId>
+    <packaging>pom</packaging>
+
+    <name>webapp</name>
+    <description>Webapp-parent</description>
+
+    <parent>
+    	<groupId>com.polaris.lesscode</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.5.0-SNAPSHOT</version>
+    </parent>
+    
+    <properties>
+    	<common-java.version>1.5.0-SNAPSHOT</common-java.version>
+    	<form-api.version>3.0.0-SNAPSHOT</form-api.version>
+    	<permission-api.version>3.0.0-SNAPSHOT</permission-api.version>
+    	<datacenter-api.version>3.0.0-SNAPSHOT</datacenter-api.version>
+    	<dashboard-api.version>1.0.5-SNAPSHOT</dashboard-api.version>
+    	<app-api.version>3.0.0-SNAPSHOT</app-api.version>
+        <workflow-api.version>2.0.1-SNAPSHOT</workflow-api.version>
+        <usercenter-api.version>1.0.4-SNAPSHOT</usercenter-api.version>
+    </properties>
+    
+    <dependencyManagement>
+    	<dependencies>
+    		<dependency>
+				<groupId>com.polaris.lesscode</groupId>
+    			<artifactId>common</artifactId>
+    			<version>${common-java.version}</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>com.polaris.lesscode</groupId>
+    			<artifactId>form-api</artifactId>
+    			<version>${form-api.version}</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>com.polaris.lesscode</groupId>
+    			<artifactId>permission-api</artifactId>
+    			<version>${permission-api.version}</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>com.polaris.lesscode</groupId>
+    			<artifactId>datacenter-api</artifactId>
+    			<version>${datacenter-api.version}</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>com.polaris.lesscode</groupId>
+    			<artifactId>dashboard-api</artifactId>
+    			<version>${dashboard-api.version}</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>com.polaris.lesscode</groupId>
+    			<artifactId>app-api</artifactId>
+    			<version>${app-api.version}</version>
+    		</dependency>
+            <dependency>
+                <groupId>com.polaris.lesscode</groupId>
+                <artifactId>workflow-api</artifactId>
+                <version>${workflow-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.polaris.lesscode</groupId>
+                <artifactId>usercenter-api</artifactId>
+                <version>${usercenter-api.version}</version>
+            </dependency>
+    	</dependencies>
+    </dependencyManagement>
+    
+    
+    <dependencies>
+    	<dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+    	
+<!--        <dependency>-->
+<!--            <groupId>com.aliyun</groupId>-->
+<!--            <artifactId>aliyun-java-sdk-core</artifactId>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.aliyun</groupId>-->
+<!--            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>-->
+<!--        </dependency>-->
+
+         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+		
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+        </dependency>
+
+        <!-- druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+        <!-- 动态数据源 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+            <version>2.5.4</version>
+        </dependency>
+        
+        
+        <!-- kafka client -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        
+
+        <dependency>
+			 <groupId>org.apache.commons</groupId>
+			 <artifactId>commons-pool2</artifactId>
+		</dependency>
+        
+		<dependency>
+			<groupId> org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-launcher</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+        <dependency>
+            <groupId>io.sentry</groupId>
+            <artifactId>sentry-spring</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+    </dependencies>
+
+	<build>
+        <finalName>lesscode-webapp</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
